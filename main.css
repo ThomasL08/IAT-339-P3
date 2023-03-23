@@ -46,7 +46,7 @@ h2,
 h3,
 h4,
 h5 {
-	color: var(--color-black);
+	color: var(--primary-color-white);
 }
 
 h1 {
@@ -444,15 +444,31 @@ p {
 
 .containers {
 	display: flex;
-	padding-left: 100px;
+	
 }
 
-.rectangle {
-	width: 200px;
+.rectangle1 {
+	width: 20em;
+	height: 35em;
+	margin: 10px;
+	background-color: var(--primary-color-white);
+	text-align: flex-start;
+}
+.rectangle2{
+	width: 20em;
+	height: 35em;
 	margin: 10px;
 	background-color: lightblue;
-	text-align: center;
+	text-align: flex-start;
 }
+.rectangle3{
+	width: 20em;
+	height: 35em;
+	margin: 10px;
+	background-color: var(--accent-color);
+	text-align: flex-start;
+}
+
 
 .rectangle h2,
 .rectangle p {
@@ -561,4 +577,50 @@ a.button2:active {
 }
 .analysis{
 	max-width: 550px;
+}
+.exlink{
+	cursor: pointer;
+}
+
+
+footer {
+	background-color: #D3D3D3;
+	color: #D3D3D3;
+	padding: 20px;
+	text-align: center;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+.footer-content {
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-logo {
+	display:flex; 
+	align-items:center; 
+}
+.footer-logo img{
+	margin-right:10px; 
+}
+.social-icons {
+	display:flex; 
+}
+.social-icons a {
+	display:inline-block;
+	width:30px;
+	height:30px;
+	background-color:#fff;
+	border-radius:50%;
+	text-align:center;
+	line-height:30px; 
+	margin-right:10px; 
 }
