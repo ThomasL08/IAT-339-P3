@@ -2,546 +2,538 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Stylesheet</title>
-	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="main.css">
-	<script src="https://kit.fontawesome.com/f9ff5b5f12.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/f9ff5b5f12.js" crossorigin="anonymous"></script>
+    <title>P3-StyleGuide</title>
 </head>
 
 <body>
 
-	<header>
-		<div class="logo">TL<span>.</span></div>
-		<div class="hamburger">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		<nav class="nav-bar active">
-			<ul>
-				<li><a href=""><span>01. </span>HOME</a></li>
-				<li><a href=""><span>02. </span>PROJECTS</a></li>
-				<li><a href=""><span>03. </span>CONTACTS</a></li>
-				<li><a href=""><span>04. </span>SOCIALS</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header>
+        <nav>
+            <div class="container nav__container">
+                <a href="index.html" class="nav__logo">
+                    <h3>TL<span>.</span></h3>
+                </a>
 
+                <ul class="nav__menu">
+                    <li><a href="portfolio.html"><span>01.</span> HOME</a></li>
+                    <li><a href="#about"><span>02.</span> ABOUT</a></li>
+                    <li><a href="#portfolio"><span>03.</span> PORTFOLIO</a></li>
+                    <li><a href="#contact"><span>04.</span> CONTACT</a></li>
+                    <li>
+                        <!-- <a href="./images/cv.pdf" class="btn btn-primary" download><i class="uil uil-download-alt"></i> Download
+                CV</a> -->
+                        <a href="./images/cv.pdf" class="button2" download="_blank"></i>Download CV</a>
+                    </li>
+                </ul>
 
-	<h1 class="main-title">P3. Style Guide</h1>
-	<!-- <div class="container">
-		<h1 class="title">Color</h1>
-		<p class="paragraph">In designing my portfolio website, I had a clear vision of what I wanted to achieve. My
-			goal was to create a modern and simple design that effectively showcased my work and skills. To accomplish
-			this, I decided to use a monochromatic color scheme. Monochromatic colors are created by using shades and
-			tints of a single color, resulting in a cohesive and visually appealing design. These colors are timeless
-			and elegant, making them the perfect choice for achieving my desired aesthetic. By carefully selecting the
-			right shades and tints, I was able to create a clean and sophisticated look that effectively communicates my
-			vision for my portfolio.</p>
+                <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+                <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+            </div>
+        </nav>
+    </header>
+    <!--================== END OF NAVBAR =================-->
 
-
-	</div> -->
-	<section class="element">
-		<div class="container">
-			<h1 class="title">Color</h1>
-
-			<p class="paragraph">In designing my portfolio website, I had a clear vision of what I wanted to achieve. My
-				goal was to create a modern and simple design that effectively showcased my work and skills. To
-				accomplish
-				this, I decided to use a monochromatic color scheme. Monochromatic colors are created by using shades
-				and
-				tints of a single color, resulting in a cohesive and visually appealing design. These colors are
-				timeless
-				and elegant, making them the perfect choice for achieving my desired aesthetic. By carefully selecting
-				the
-				right shades and tints, I was able to create a clean and sophisticated look that effectively
-				communicates my
-				vision for my portfolio.</p>
-
-
-			<div class="containers">
-				<div class="rectangle1">
-					<h2>Title</h2>
-					<h2>This is a paragraph inside the rectangle.</h2>
-				</div>
-				<div class="rectangle2">
-					<h2>Title</h2>
-					<h2>This is a paragraph inside the rectangle.</h2>
-				</div>
-				<div class="rectangle3">
-					<h2>Title</h2>
-					<h2>This is a paragraph inside the rectangle.</h2>
-
-
-
-				</div>
-
-			</div>
-			<h4>Sample Code:</h4>
-
-			<code>
-					&lt;div class="container"&gt;
-					<br>
-						&lt;h1 class="title"&gt;Color&lt;/h1&gt;
-						<br>
-						&lt;p class="paragraph"&gt;&lt;/p&gt;
-						<br>
-					&lt;/div&gt;
-					<br>
-					
-						&lt;div class="containers"&gt;
-						<br>
-							&lt;div class="rectangle"&gt;
-							<br>
-								&lt;h2&gt;Title&lt;/h2&gt;
-								<br>
-								&lt;h2&gt;This is a paragraph inside the rectangle.&lt;/h2&gt;
-								<br>
-							&lt;/div&gt;
-							<br>
-							&lt;div class="rectangle"&gt;
-							<br>
-								&lt;h2&gt;Title&lt;/h2&gt;
-								<br>
-								&lt;h2&gt;This is a paragraph inside the rectangle.&lt;/h2&gt;
-								<br>
-							&lt;/div&gt;
-							<br>
-							&lt;div class="rectangle"&gt;
-							<br>
-								&lt;h2&gt;Title&lt;/h2&gt;
-								<br>
-								&lt;h2&gt;This is a paragraph inside the rectangle.&lt;/h2&gt;
-								<br>
-						
-							&lt;/div&gt;
-							<br>
-						&lt;/div&gt;
-						<br>
-					
-					</code>
-		</div>
-		</section>
-	<section class="element">
-		<div class="container">
-			<div class="title">Headings</div>
-			<h1>Heading</h1>
-			<h2>Heading</h2>
-			<h3>Heading</h3>
-			<h4>Heading</h4>
-			<h5>Heading</h5>
-			<h4>Sample Code:</h4>
-		<code>
-			&lt;div class="container"&gt;
-			<br>
-				&lt;div class="title"&gt;Headings&lt;/div&gt;
-				<br>
-				&lt;h1&gt;Heading&lt;/h1&gt;
-				<br>
-				&lt;h2&gt;Heading&lt;/h2&gt;
-				<br>
-				&lt;h3&gt;Heading&lt;/h3&gt;
-				<br>
-				&lt;h4&gt;Heading&lt;/h4&gt;
-				<br>
-				&lt;h5&gt;Heading&lt;/h5&gt;
-				<br>
-			&lt;/div&gt;
-			</code>
-		</div>
-		
-	</section>
-	
-	<section class="element">
-		<div class="hero">
-			<div class="title">ABOUT</div>
-			<div class="intro">
-				<h2>Hi my name is</h2>
-			</div>
-			<div class="brief">
-				Thomas
-				<br>
-				And I bring designs into reality.
-
-			</div>
-			<p>
-				I'm a front-end web developper specializing in turning designs into working code. I’m passionate about
-				creating beautiful and user-friendly websites that provide a great user experience. I’m proficient in
-				HTML,
-				CSS, and JavaScript. I have a strong combination of technical ability and creativity. I’m always eager
-				to
-				learn new technologies and I’m committed to delivering high-quality work. When I’m not coding, you can
-				find
-				me playing video games. Currently, seeking
-				for
-				co-op positions from tech related companies as well as small to medium company who want to have an online presence online to reach more customers.
-			</p>
-			<!-- <button class="resume-button1">
-                <a href="">Hire Me!</a>
-            </button> -->
-			<h4>Sample Code:</h4>
-			<code>
-				&lt;div class="hero"&gt;
-				<br>
-					&lt;div class="title"&gt;ABOUT&lt;/div&gt;
-					<br>
-					&lt;div class="intro"&gt;
-					<br>
-						&lt;h2&gt;Hi my name is&lt;/h2&gt;
-						<br>
-					&lt;/div&gt;
-					<br>
-					&lt;div class="brief"&gt;
-						Thomas
-						&lt;br&gt;
-						<br>
-						And I bring designs into reality.
-					&lt;/div&gt;
-					<br>
-					&lt;p&gt;
-						I'm a front-end web developper specializing in turning designs into working code. I’m passionate about
-						creating beautiful and user-friendly websites that provide a great user experience. I’m proficient in
-						HTML,
-						CSS, and JavaScript. I have a strong combination of technical ability and creativity. I’m always eager
-						to
-						learn new technologies and I’m committed to delivering high-quality work. When I’m not coding, you can
-						find
-						me playing video games. Currently, seeking
-						for
-						co-op positions.
-					&lt;/p&gt;
-				<br>
-				&lt;/div&gt;
-				</code>
-		</div>
-
-	</section>
-	<section class="element">
-		<div class="container">
-			<div class="title">Projects</div>
-			
-		</div>
-		<div class="container portfolio__container">
-			<div class="portfolio__head">
-				<h3>Projects That I had Done</h3>
-				<div class="portfolio__head-right">
-					<p>
-						Here are a seclection of projects that I had created with various front-end technologies from
-						HTML, CSS,
-						JavaScript, React, and more.
-					</p>
-					<a href="#">Explore More <i class="uil uil-arrow-right"></i></a>
-				</div>
-			</div>
-
-			<div class="portfolio__projects">
-				<article class="portfolio__project">
-					<a href="project1.html"><span class="portfolio__project-image"><img src="img/IAT 235.png" /></span></a>
-					<div class="portfolio__cta">
-						<div class="tech">
-							<h3>Technology Used</h3>
-							<i class="fa-brands fa-html5"></i>
-							<i class="fa-brands fa-css3-alt"></i>
-							<i class="fa-brands fa-js"></i>
-						</div>
-					</div>
-						<div class="button-container">
-							<a href="https://github.com/ThomasL08/IAT-235-Archtecture-Museum" class="button2" target="_blank">Github</a>
-							<a href="https://thomasl08.github.io/IAT-235-Archtecture-Museum/" class="button2" target="_blank">Live
-								Demo</a>
-						</div>
-					
-				</article>
-				<article class="portfolio__project">
-					<a href="project2.html"><span class="portfolio__project-image"><img src="img/project2.png" /></span></a>
-					<div class="portfolio__cta">
-						<div class="tech">
-							<h3>Technology Used</h3>
-							<i class="fa-brands fa-html5"></i>
-							<i class="fa-brands fa-css3-alt"></i>
-							<i class="fa-brands fa-js"></i>
-						</div>
-					</div>
-						<div class="button-container">
-							<a href="https://github.com/ThomasL08/Clothing-Ecom-Landing-Page" class="button2" target="_blank">Github</a>
-							<a href="https://thomasl08.github.io/Clothing-Ecom-Landing-Page/" class="button2" target="_blank">Live
-								Demo</a>
-						</div>
-				</article>
-
-
-			</div>
-
-			<img class="analysis" src="img/UnitLondon.png" alt="Image">
-			<h2>Project Details:</h2>
-			<p>Course: IAT 235</p>
-			<h2>Project Duration:</h2>
-			<p>1.5 week</p>
-			<br>
-			<h2>Project Objective / Goals</h2>
-			<p>
-				The objective is to create a functional website for a museum related to project two, which was architect
-				designers, which will need to include a landing page, exhibition/ events page, artist page, and two detailed
-				exhibitions by those architectural designers.
-			</p>
-	
-	
-			<img class="analysis" src="img/UnitLondon.png" alt="Image">
-			<h2>Research:</h2>
-			<p>
-				We had looked at many museum websites paying attention to the layout. We found many unique structures, some
-				more abstract with expressive typography as the main driving force behind the layout and design, while
-				others with more standard configurations. Due to the short time constraints of the projects and the
-				inexperience of my group member concerning HTML and CSS, we had to lower our expectations. After stumbling
-				upon Unit London museum website, the 2021 version, we found various elements that become the main components
-				of your design.
-			</p>
-			<img class="analysis" src="img/page1.png" alt="" alt="Image">
-			<h2>My Role:</h2>
-			<p> I design and collect images for website content
-				Coding the web pages such as the landing page, the artist page, the event/ exhibition page, and the two
-				detailed exhibition pages.
-			</p>
-			<img class="analysis" src="img/UnitLondon.png" alt="Image">
-			<h2>Challenges:</h2>
-			<p>There were many coding challenges throughout the development of the project. Initially, we decided to split
-				the coding between us since this was a group project to decrease the production time and meet the short
-				deadline. However, we encountered code issues not complying correctly and not displaying the correct layout
-				we were trying to create. Furthermore, we had to design the web page of the two detailed exhibition pages
-				due to time and our coding styles being quite different. It took time to debug the code, which resulted in
-				me having to recode most of the code written by my team member as I was more knowledgeable in HTML and CSS
-				than he was. In hindsight, we should have created a cohesive style guide, and coding rules to follow would
-				have significantly reduced the issues that arose.
-	
-			</p>
-			<h2>My Takeaways:</h2>
-			<p>Setting up Coding rules
-				Having a style guide is vital in maintaining the layout and design of the website accurately.
-				</p>
-			<h2>Conclusion / Result</h2>
-			<p>Despite the setbacks and time constraints, we got a high B for the project, and I gained more knowledge on
-				project management and expanded my expertise in HTML, CSS, and Javascript.
-			</p>
-			<h2>Project Details:</h2>
-			<p>Personal Project in creating a clothing E-commerce website 
-			</p>
-			<h2>Project Duration:</h2>
-			<p>2 weeks</p>
-			<br>
-			<h2>Project Objective / Goals</h2>
-			<p>
-				The objective was to create a believable E-Commerce clothing website.
-			</p>
-	
-	
-			<img class="analysis" src="img/project2anly.png" alt="Image">
-			<h2>Research:</h2>
-			<p>
-				For this personal project, I looked at some website designs on dribble and some actual life clothing websites to get inspiration on potential layouts. Mr. Simple's clothing website was used as the main design focus for this project.
-	
-			</p>
-			<img class="analysis" src="img/project2.png" alt="" alt="Image">
-			<h2>My Role:</h2>
-			<p>  I designed the layout, content, and copywriting of the website.
-	
-			</p>
-			
-			<h2>Challenges:</h2>
-			<p>There are some coding challenges concerning the navigation bar and its special effects. Furthermore, I was practicing in creatine CSS variables to facilitate reusable elements and styling.
-	
-			</p>
-			<h2>My Takeaways</h2>
-			<p>Setting up Coding rules
-				Having a style guide is vital in maintaining the layout and design of the website accurately.
-				</p>
-			<h2>Conclusion / Result</h2>
-			<p>Although the challenge was initially beyond my knowledge, I persevered and found solutions while gaining more project management knowledge and expanding my expertise in HTML, CSS, and Javascript.
-			</p>
-		</div>
-		</div>
-	
-
-		</div>
-	</section>
-	<section class="element">
-		<div class="container">
-			<div class="title">Navigation Menu</div>
-			<header>
-				<div class="logo">TL<span>.</span></div>
-				<div class="hamburger">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</div>
-				<nav class="nav-bar active">
-					<ul>
-						<li><a href=""><span>01. </span>HOME</a></li>
-						<li><a href=""><span>02. </span>PROJECTS</a></li>
-						<li><a href=""><span>03. </span>CONTACTS</a></li>
-						<li><a href=""><span>04. </span>SOCIALS</a></li>
-					</ul>
-				</nav>
-			</header>
-			<h4>Sample Code:</h4>
-			<code>
-				&lt;div class="container"&gt;
-				<br>
-					&lt;div class="title"&gt;Navigation Menu&lt;/div&gt;
-					<br>
-					&lt;header&gt;
-					<br>
-						&lt;div class="logo"&gt;TL&lt;span&gt;.&lt;/span&gt;&lt;/div&gt;
-						<br>
-						&lt;div class="hamburger"&gt;
-						<br>
-							&lt;div class="line"&gt;&lt;/div&gt;
-							<br>
-							&lt;div class="line"&gt;&lt;/div&gt;
-							<br>
-
-							&lt;div class="line"&gt;&lt;/div&gt;
-							<br>
-						&lt;/div&gt;
-						<br>
-						&lt;nav class="nav-bar active"&gt;
-						<br>
-							&lt;ul&gt;
-							<br>
-								&lt;li&gt;&lt;a href=""&gt;&lt;span&gt;01. &lt;/span&gt;HOME&lt;/a&gt;&lt;/li&gt;
-								<br>
-								&lt;li&gt;&lt;a href=""&gt;&lt;span&gt;02. &lt;/span&gt;PROJECTS&lt;/a&gt;&lt;/li&gt;
-								<br>
-								&lt;li&gt;&lt;a href=""&gt;&lt;span&gt;03. &lt;/span&gt;CONTACTS&lt;/a&gt;&lt;/li&gt;
-								<br>
-								&lt;li&gt;&lt;a href=""&gt;&lt;span&gt;04. &lt;/span&gt;SOCIALS&lt;/a&gt;&lt;/li&gt;
-								<br>
-							&lt;/ul&gt;
-							<br>
-						&lt;/nav&gt;
-						<br>
-					&lt;/header&gt;
-					<br>
-				&lt;/div&gt;
-				</code>
-		</div>
-	</section>
-	<section class="element">
-		<div class="container">
-			<div class="title">Buttons</div>
-			<a href="" class="button2" target="_blank">Button</a>
-			<h4>Sample Code:</h4>
-			<code>
-			&lt;div class="container"&gt;
-			<br>
-				&lt;div class="title"&gt;Buttons&lt;/div&gt;
-				<br>
-				&lt;a href="" class="button2" target="_blank"&gt;Button&lt;/a&gt;
-				<br>
-			&lt;/div&gt;
-		</code>
-		</div>
-
-	</section>
-	<section class="element">
-		<div class="container">
-			<div class="title">
-				Footer
-			</div>
-			<h4>Sample Code:</h4>
-			<footer>
-				<div> Copyright &copy; TL. All rights Reserved </div>
-			</footer>
-			<code>&lt;footer&gt;
-				<br>
-				&lt;div&gt; Copyright &amp;copy; TL. All rights Reserved &lt;/div&gt;
-				<br>
-			&lt;/footer&gt;</code>
-		</div>
-	</section>
-	<section class="element">
-		<div class="container">
-			<div class="title">Contacts
-			</div>
-
-
-			<div class="container contact__container">
-				<div class="contact__left">
-					<h2>Let's Talk!</h2>
-					<p>
-						Do you have any questions? Please do not hesitate to contact me directly for further inquires.
-					</p>
-					<!-- <ul class="contact__socials">
-						<li>
-							<a href="https://github.com/ThomasL08" target="_blank"><i class="uil uil-github"></i></a>
-						</li>
-					</ul> -->
-				</div>
-
-				<form action="https://formsubmit.co/731971186f05f559b5f7f9b583b43019" method="POST">
-					<input type="hidden" name="_subject" value="New Email">
-					<input type="hidden" name="_template" value="table">
-					<input type="text" name="name" placeholder="Your Name" required />
-					<input type="email" name="email" placeholder="Your Email" required />
-					<textarea name="message" rows="6" placeholder="Message" required></textarea>
-					<a type="submit" class="button2">
-						Send <i class="uil uil-arrow-right"></i>
-					</a>
-				</form>
-			</div>
-			<h4>Sample Code:</h4>
-			<code>&lt;div class="container contact__container"&gt;
-			<br>
-			&lt;div class="contact__left"&gt;
-			<br>
-				&lt;h2&gt;Let's Talk!&lt;/h2&gt;
-				<br>
-				&lt;p&gt;
-				<br>
-					Do you have any questions? Please do not hesitate to contact me directly for further inquires.
-				&lt;/p&gt;
-				<br>
-			&lt;/div&gt;
-			<br>
-		
-			&lt;form action="https://formsubmit.co/731971186f05f559b5f7f9b583b43019" method="POST"&gt;
-			<br>
-				&lt;input type="hidden" name="_subject" value="New Email"&gt;
-				<br>
-				&lt;input type="hidden" name="_template" value="table"&gt;
-				<br>
-				&lt;input type="text" name="name" placeholder="Your Name" required /&gt;
-				<br>
-				&lt;input type="email" name="email" placeholder="Your Email" required /&gt;
-				<br>
-				&lt;textarea name="message" rows="6" placeholder="Message" required&gt;&lt;/textarea&gt;
-				<br>
-				&lt;a type="submit" class="button2"&gt;
-				<br>
-					Send &lt;i class="uil uil-arrow-right"&gt;&lt;/i&gt;
-					<br>
-				&lt;/a&gt;
-				<br>
-			&lt;/form&gt;
-			<br>
-		&lt;/div&gt;</code>
-		</div>
-
-	</section>
-	<section class="element">
-		<div class="container">
-			<a href="portfolio.html">
-				<div class="title exlink">Layout Template</div>
-			</a>
-		</div>
-	</section>
+    <header class="style-guide">
+    <!-- pre-loader -->
+    <div class="preloader">
+        <div class="scene">
+            <div class="objects">
+                <div class="square"></div>
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="wizard">
+                <div class="body"></div>
+                <div class="right-arm">
+                    <div class="right-hand"></div>
+                </div>
+                <div class="left-arm">
+                    <div class="left-hand"></div>
+                </div>
+                <div class="head">
+                    <div class="beard"></div>
+                    <div class="face">
+                        <div class="adds"></div>
+                    </div>
+                    <div class="hat">
+                        <div class="hat-of-the-hat"></div>
+                        <div class="four-point-star --first"></div>
+                        <div class="four-point-star --second"></div>
+                        <div class="four-point-star --third"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <h1 class="main-title">P3. Style Guide</h1>
+    </div>
 
 
 
 
-	<script src="script.js"></script>
+    <div class="container">
+        <h1 class="title">Color</h1>
+
+        <p class="paragraph">In designing my portfolio website, I had a clear vision of what I wanted to achieve. My
+            goal was to create a modern and simple design that effectively showcased my work and skills. To
+            accomplish
+            this, I decided to use a monochromatic color scheme. Monochromatic colors are created by using shades
+            and
+            tints of a single color, resulting in a cohesive and visually appealing design. These colors are
+            timeless
+            and elegant, making them the perfect choice for achieving my desired aesthetic. By carefully selecting
+            the
+            right shades and tints, I was able to create a clean and sophisticated look that effectively
+            communicates my
+            vision for my portfolio.</p>
+
+
+        <div class="containers">
+            <div class="rectangle1">
+                <h2>Primary Color</h2>
+                <h4>#000000</h4>
+                <p>Using black as the main color in a design can create a modern and sophisticated aesthetic. It's versatile and timeless, evoking sophistication, elegance, and minimalism. The strategic use of black can create a sense of contrast and depth, allowing other design elements to stand out and improving the overall visual experience.</p>
+            </div>
+            <div class="rectangle1">
+                <h2>Secondary Color</h2>
+                <h4>#ffffff</h4>
+                <p>White can enhance a design's modern and minimalist aesthetic as a secondary color. The color is classic and timeless, evoking simplicity and purity, while creating a sense of balance and harmony with the primary color. This creates a clean and polished look. Additionally, white can be used to highlight important design elements, making them more visible and easier to understand. Incorporating white as a secondary color can produce an elegant and sophisticated design with a minimalist feel.</p>
+            </div>
+            <div class="rectangle1">
+                <h2>Accent Color</h2>
+                <h4>#64ffda</h4>
+                <p>Adding cyan as an accent color can bring energy and vibrancy to a design, creating a playful and engaging aesthetic. Its strategic use can draw attention to important design elements while maintaining balance and harmony with other colors. Cyan can be paired with darker shades for a sophisticated look or with warmer colors for a striking contrast. Overall, cyan as an accent color can create an engaging and modern design.</p>
+
+
+
+            </div>
+            <div class="rectangle1">
+                <h2>Secondary Color</h2>
+                <h4>#8892B0</h4>
+                <p>Steel blue, a muted shade of blue-grey, adds depth and sophistication as an accent color in design. It creates a sense of calmness and stability while drawing attention to specific design elements. Steel blue pairs well with warm or cool colors, creating striking contrasts or a calming monochromatic effect. Overall, incorporating steel blue as an accent color creates a visually appealing and modern design with a sense of sophistication and stability.</p>
+
+
+
+            </div>
+            <div class="rectangle1">
+                <h2>Tertiary Color</h2>
+                <h4>#4b4a53</h4>
+                <p>Charcoal grey, a dark shade of grey, adds depth and contrast as an accent color in design. It creates a sense of sophistication and timelessness while drawing attention to specific design elements. Charcoal grey pairs well with cool and warm colors, creating striking contrasts, or as a standalone color for a minimalist aesthetic. Overall, incorporating charcoal grey as an accent color creates a visually appealing and sophisticated design with a sense of depth and contrast.
+
+
+
+
+
+                </p>
+
+
+
+            </div>
+            <div class="rectangle1">
+                <h2>Tertiary Color</h2>
+                <h4>rgba(102, 0, 255, 0.2)</h4>
+                <p>A semi-transparent shade of blue-purple can add a touch of sophistication and elegance to a design. Its modern and minimalist appeal creates a sense of simplicity and clarity, while its subtle use can highlight important design elements without overwhelming the overall aesthetic. This shade is perfect for adding depth and interest to a design while maintaining a clean and polished look.
+
+
+
+
+
+                </p>
+
+
+
+            </div>
+
+        </div>
+        <h4>Sample Code:</h4>
+
+        <code>
+            &lt;div class="container"&gt;
+            <br>
+                &lt;h1 class="title"&gt;Color&lt;/h1&gt;
+                <br>
+                &lt;p class="paragraph"&gt;&lt;/p&gt;
+                <br>
+            &lt;/div&gt;
+            <br>
+            
+                &lt;div class="containers"&gt;
+                <br>
+                    &lt;div class="rectangle"&gt;
+                    <br>
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        <br>
+                        &lt;h2&gt;This is a paragraph inside the rectangle.&lt;/h2&gt;
+                        <br>
+                    &lt;/div&gt;
+                    <br>
+                    &lt;div class="rectangle"&gt;
+                    <br>
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        <br>
+                        &lt;h2&gt;This is a paragraph inside the rectangle.&lt;/h2&gt;
+                        <br>
+                    &lt;/div&gt;
+                    <br>
+                    &lt;div class="rectangle"&gt;
+                    <br>
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        <br>
+                        &lt;h2&gt;This is a paragraph inside the rectangle.&lt;/h2&gt;
+                        <br>
+                
+                    &lt;/div&gt;
+                    <br>
+                &lt;/div&gt;
+                <br>
+            
+            </code>
+    </div>
+
+
+    <div class="container">
+        <div class="title">Headings</div>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <h5>Heading</h5>
+        <h4>Sample Code:</h4>
+        <code>
+                &lt;div class="container"&gt;
+                <br>
+                    &lt;div class="title"&gt;Headings&lt;/div&gt;
+                    <br>
+                    &lt;h1&gt;Heading&lt;/h1&gt;
+                    <br>
+                    &lt;h2&gt;Heading&lt;/h2&gt;
+                    <br>
+                    &lt;h3&gt;Heading&lt;/h3&gt;
+                    <br>
+                    &lt;h4&gt;Heading&lt;/h4&gt;
+                    <br>
+                    &lt;h5&gt;Heading&lt;/h5&gt;
+                    <br>
+                    &lt;/div&gt;
+                 </code>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="title">ABOUT</div>
+        <div class="intro">
+            <h2>Hi my name is</h2>
+        </div>
+        <div class="brief">
+            Thomas
+            <br>
+            And I bring designs into reality.
+
+        </div>
+        <p>
+            I'm a front-end web developper specializing in turning designs into working code. I’m passionate about
+            creating beautiful and user-friendly websites that provide a great user experience. I’m proficient in
+            HTML,
+            CSS, and JavaScript. I have a strong combination of technical ability and creativity. I’m always eager
+            to
+            learn new technologies and I’m committed to delivering high-quality work. When I’m not coding, you can
+            find
+            me playing video games. Currently, seeking
+            for
+            co-op positions from tech related companies as well as small to medium company who want to have an
+            online presence online to reach more customers.
+        </p>
+        <h4>Sample Code:</h4>
+        <code>
+        &lt;div class="hero"&gt;
+        <br>
+            &lt;div class="title"&gt;ABOUT&lt;/div&gt;
+            <br>
+            &lt;div class="intro"&gt;
+            <br>
+                &lt;h2&gt;Hi my name is&lt;/h2&gt;
+                <br>
+            &lt;/div&gt;
+            <br>
+            &lt;div class="brief"&gt;
+                Thomas
+                &lt;br&gt;
+                <br>
+                And I bring designs into reality.
+            &lt;/div&gt;
+            <br>
+            &lt;p&gt;
+                ...
+            &lt;/p&gt;
+        <br>
+        &lt;/div&gt;
+        </code>
+
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="title">Projects
+        </div>
+
+
+        <div class="container portfolio__container">
+            
+              <div class="portfolio__head">
+                
+                <div class="portfolio__head-right">
+                  <p>
+                    Here are a seclection of projects that I had created with various front-end technologies
+                    from
+                    HTML, CSS,
+                    JavaScript, React, and more.
+                  </p>
+                  <a href="#" class="button2">Explore More <i class="uil uil-arrow-right"></i></a>
+        
+                </div>
+              </div>
+        
+              <div class="portfolio__projects">
+                <article class="portfolio__project">
+                  <a href="project1.html"><span class="portfolio__project-image"><img src="img/IAT 235.png" /></span></a>
+                  <div class="portfolio__cta">
+                    <div class="tech">
+                      <h3>Technology Used</h3>
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-css3-alt"></i>
+                      <i class="fa-brands fa-js"></i>
+                    </div>
+                  </div>
+                  <div class="button-container">
+                    <a href="https://github.com/ThomasL08/IAT-235-Archtecture-Museum" class="button2" target="_blank">Github</a>
+                    <a href="https://thomasl08.github.io/IAT-235-Archtecture-Museum/" class="button2" target="_blank">Live
+                      Demo</a>
+                  </div>
+                </article>
+                <article class="portfolio__project">
+                  <a href="project2.html"><span class="portfolio__project-image"><img src="img/project2.png" /></span></a>
+                  <div class="portfolio__cta">
+                    <div class="tech">
+                      <h3>Technology Used</h3>
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-css3-alt"></i>
+                      <i class="fa-brands fa-js"></i>
+                    </div>
+                  </div>
+                  <div class="button-container">
+                    <a href="https://github.com/ThomasL08/Clothing-Ecom-Landing-Page" class="button2" target="_blank">Github</a>
+                    <a href="https://thomasl08.github.io/Clothing-Ecom-Landing-Page/" class="button2" target="_blank">Live
+                      Demo</a>
+                  </div>
+                </article>
+        
+              </div>
+            </div>
+          
+
+
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="title">Navigation Menu</div>
+       
+            <nav>
+                <div class=" nav__container">
+                    <a href="index.html" class="nav__logo">
+                        <h3>TL<span>.</span></h3>
+                    </a>
+    
+                    <ul class="nav__menu">
+                        <li><a href="portfolio.html"><span>01.</span> HOME</a></li>
+                        <li><a href="#about"><span>02.</span> ABOUT</a></li>
+                        <li><a href="#portfolio"><span>03.</span> PORTFOLIO</a></li>
+                        <li><a href="#contact"><span>04.</span> CONTACT</a></li>
+                        <li>
+                            <!-- <a href="./images/cv.pdf" class="btn btn-primary" download><i class="uil uil-download-alt"></i> Download
+                    CV</a> -->
+                            <a href="./images/cv.pdf" class="button2" download="_blank"></i>Download CV</a>
+                        </li>
+                    </ul>
+    
+                    <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+                    <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+                </div>
+            </nav>
+        
+
+        <h4>Sample Code:</h4>
+        <!-- <code>
+        &lt;div class="container"&gt;
+        <br>
+            &lt;div class="title"&gt;Navigation Menu&lt;/div&gt;
+            <br>
+            &lt;header&gt;
+            <br>
+                &lt;div class="logo"&gt;TL&lt;span&gt;.&lt;/span&gt;&lt;/div&gt;
+                <br>
+                &lt;div class="hamburger"&gt;
+                <br>
+                    &lt;div class="line"&gt;&lt;/div&gt;
+                    <br>
+                    &lt;div class="line"&gt;&lt;/div&gt;
+                    <br>
+
+                    &lt;div class="line"&gt;&lt;/div&gt;
+                    <br>
+                &lt;/div&gt;
+                <br>
+                &lt;nav class="nav-bar active"&gt;
+                <br>
+                    &lt;ul&gt;
+                    <br>
+                        &lt;li&gt;&lt;a href=""&gt;&lt;span&gt;01. &lt;/span&gt;HOME&lt;/a&gt;&lt;/li&gt;
+                        <br>
+                        &lt;li&gt;&lt;a href=""&gt;&lt;span&gt;02. &lt;/span&gt;PROJECTS&lt;/a&gt;&lt;/li&gt;
+                        <br>
+                        &lt;li&gt;&lt;a href=""&gt;&lt;span&gt;03. &lt;/span&gt;CONTACTS&lt;/a&gt;&lt;/li&gt;
+                        <br>
+                        &lt;li&gt;&lt;a href=""&gt;&lt;span&gt;04. &lt;/span&gt;SOCIALS&lt;/a&gt;&lt;/li&gt;
+                        <br>
+                    &lt;/ul&gt;
+                    <br>
+                &lt;/nav&gt;
+                <br>
+            &lt;/header&gt;
+            <br>
+        &lt;/div&gt;
+        </code> -->
+    </div>
+
+
+    <div class="container">
+        <div class="title">Buttons</div>
+        <a href="" class="button2" target="_blank">Button</a>
+        <h4>Sample Code:</h4>
+        <code>
+    &lt;div class="container"&gt;
+    <br>
+        &lt;div class="title"&gt;Buttons&lt;/div&gt;
+        <br>
+        &lt;a href="" class="button2" target="_blank"&gt;Button&lt;/a&gt;
+        <br>
+    &lt;/div&gt;
+</code>
+    </div>
+
+
+
+    <div class="container">
+        <div class="title">
+            Footer
+        </div>
+        <footer>
+            <div> Copyright &copy; TL. All rights Reserved </div>
+        </footer>
+        <h4>Sample Code:</h4>
+
+        <code>&lt;footer&gt;
+        <br>
+        &lt;div&gt; Copyright &amp;copy; TL. All rights Reserved &lt;/div&gt;
+        <br>
+    &lt;/footer&gt;</code>
+    </div>
+
+
+    <div class="container">
+        <div class="title">Contacts
+        </div>
+
+
+        <div class="container contact__container">
+            <div class="contact__left">
+                <h1>Let's Talk</h1>
+                <p>
+                    Do you have any questions? Please do not hesitate to contact me directly for further inquires.
+                </p>
+                <ul class="contact__socials">
+                    <li>
+                        <a href="https://github.com" target="_blank"><i class="uil uil-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank"><i class="uil uil-linkedin"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <form action="https://formspree.io/f/xnqwnlbd" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                <a type="submit" class="button2">
+                    Send <i class="uil uil-arrow-right"></i>
+                </a>
+            </form>
+        </div>
+        <h4>Sample Code:</h4>
+        <code>&lt;div class="container contact__container"&gt;
+    <br>
+    &lt;div class="contact__left"&gt;
+    <br>
+        &lt;h2&gt;Let's Talk!&lt;/h2&gt;
+        <br>
+        &lt;p&gt;
+        <br>
+            Do you have any questions? Please do not hesitate to contact me directly for further inquires.
+        &lt;/p&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+
+    &lt;form action="https://formsubmit.co/731971186f05f559b5f7f9b583b43019" method="POST"&gt;
+    <br>
+        &lt;input type="hidden" name="_subject" value="New Email"&gt;
+        <br>
+        &lt;input type="hidden" name="_template" value="table"&gt;
+        <br>
+        &lt;input type="text" name="name" placeholder="Your Name" required /&gt;
+        <br>
+        &lt;input type="email" name="email" placeholder="Your Email" required /&gt;
+        <br>
+        &lt;textarea name="message" rows="6" placeholder="Message" required&gt;&lt;/textarea&gt;
+        <br>
+        &lt;a type="submit" class="button2"&gt;
+        <br>
+            Send &lt;i class="uil uil-arrow-right"&gt;&lt;/i&gt;
+            <br>
+        &lt;/a&gt;
+        <br>
+    &lt;/form&gt;
+    <br>
+&lt;/div&gt;</code>
+    </div>
+
+
+
+    <div class="container">
+        <a href="portfolio.html">
+            <div class="title exlink">Layout Template</div>
+        </a>
+    </div>
+
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

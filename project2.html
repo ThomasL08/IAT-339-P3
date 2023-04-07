@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/f9ff5b5f12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CLO</title>
 </head>
-
 <body>
     <header>
-        <div class="logo">TL<span>.</span></div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar active">
-            <ul>
-                <li><a href=""><span>01. </span>HOME</a></li>
-                <li><a href=""><span>02. </span>PROJECTS</a></li>
-                <li><a href=""><span>03. </span>CONTACTS</a></li>
-                <li><a href=""><span>04. </span>SOCIALS</a></li>
+        <nav>
+          <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+              <h3>TL<span>.</span></h3>
+            </a>
+    
+            <ul class="nav__menu">
+              <li><a href="portfolio.html"><span>01.</span> HOME</a></li>
+              <li><a href="#about"><span>02.</span> ABOUT</a></li>
+              <li><a href="#portfolio"><span>03.</span> PORTFOLIO</a></li>
+              <li><a href="#contact"><span>04.</span> CONTACT</a></li>
+              <li>
+                <!-- <a href="./images/cv.pdf" class="btn btn-primary" download><i class="uil uil-download-alt"></i> Download
+                CV</a> -->
+                <a href="./images/cv.pdf" class="button2" download="_blank"></i>Download CV</a>
+              </li>
             </ul>
+    
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+          </div>
         </nav>
-    </header>
-    <div class="container">
-        <div class="title">CLO</div>
+      </header>
+      <div class="container">
+      <div class="title">CLO</div>
         <h2>Project Details:</h2>
         <p>Personal Project in creating a clothing E-commerce website 
         </p>
@@ -66,9 +71,6 @@
         </p>
     </div>
     </div>
-    <footer>
-        <div> Copyright &copy; TL. All rights Reserved </div>
-    </footer>
+</div>
 </body>
-
 </html>
