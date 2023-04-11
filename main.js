@@ -25,12 +25,12 @@ if (window.innerWidth < 1024) {
     navItem.addEventListener("click", closeNav);
   });
 }
-// // change navbar styles on scroll
-// window.addEventListener("scroll", () => {
-//   document
-//     .querySelector("nav")
-//     .classList.toggle("window-scroll", window.scrollY > 0);
-// });
+// change navbar styles on scroll
+window.addEventListener("scroll", () => {
+  document
+    .querySelector("nav")
+    .classList.toggle("window-scroll", window.scrollY > 0);
+});
 window.addEventListener('load', function() {
   setTimeout(function(){
     var preloader = document.querySelector('.preloader');

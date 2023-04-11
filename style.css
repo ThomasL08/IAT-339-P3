@@ -184,7 +184,8 @@ nav a:hover {
   align-items: center;
 
 }
-header{
+
+header {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -193,11 +194,13 @@ header{
   place-items: center;
   overflow: hidden;
   background-color: var(--color-black);
-  
+
 }
+
 .container.nav__container {
   padding: 1em;
 }
+
 /* open and close buttons for tablets and phones */
 nav button {
   display: none;
@@ -210,8 +213,41 @@ nav button {
   gap: 4rem;
 }
 
+.nav__menu a:hover span {
+  position: relative;
+}
+
+
+.nav__menu a:hover span::after {
+  content: " ";
+  position: absolute;
+  width: 250%;
+  height: 4px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  /* added transition property */
+
+}
+
+
+
+.nav__menu a:hover span::after {
+  left: 55%;
+  margin-left: 10px;
+  right: 0;
+  /* added right property to center the line with the text */
+}
+
+.nav__menu--long a:hover span::before {
+  right: 400%;
+  /* increase right value to make the line longer */
+  width: 450%;
+}
+
 /* ===================== HEADER ========================== */
-#about{
+#hero {
   background-color: var(--color-black);
   height: calc(100vh - 5rem);
   margin: 0;
@@ -221,35 +257,37 @@ nav button {
   position: relative;
 }
 
-.about__container{
+
+
+.hero__container {
   display: grid;
   grid-template-columns: 40% 60%;
   height: 100%;
 }
 
-.about__left {
+.hero__left {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.about__left h3 {
+.hero__left h3 {
   color: var(--color-primary);
   margin-bottom: 0.6rem;
 }
 
-.about__left p {
+.hero__left p {
   margin: 1.2rem 0 2rem;
   font-family: 'Space Mono', sans-serif;
   color: var(--secondary-variation);
 }
 
-.about__right {
+.hero__right {
   position: relative;
   height: 100%;
 }
 
-.about__socials {
+.hero__socials {
   position: absolute;
   right: 0;
   bottom: 8rem;
@@ -259,18 +297,20 @@ nav button {
   font-size: 1.2rem;
 }
 
-.about__socials a {
+.hero__socials a {
   color: var(--color-white);
   transition: all 400ms ease;
 }
 
-.about__socials a:hover {
+.hero__socials a:hover {
   color: var(--accent-color);
 }
 
+p {
+  font-family: 'Space Mono', sans-serif;
+}
 
-
-.about__image {
+.hero__image {
   width: 82%;
   position: absolute;
   bottom: -1rem;
@@ -280,75 +320,48 @@ nav button {
 
 
 /* ================= SERVICES ============== */
-#services {
+#about {
   margin: 0;
   background: var(--color-black);
   padding-top: 4em;
   padding-bottom: 10em;
 }
 
-.services__container {
+.about__container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
 }
 
-.services__left {
-  flex: 0 0 50%;
-  padding: 0 20px;
+.about__left {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
-.services__right {
-  flex: 0 0 50%;
-  padding: 0 20px;
+.about__right {
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
-.services__right h2 {
+.about__left h1 {
   margin-top: 0;
 }
 
-.services__cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.about__left p {
+  margin-bottom: 0;
 }
 
-.services__card {
-  flex: 1 1 100%;
-  background-color: var(--color-dark);
-  padding: 20px;
-  border-radius: 5px;
-}
+@media (max-width: 767px) {
+  .about__left {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
 
-.services__card-icon {
-  font-size: 24px;
-  margin-right: 10px;
-}
-
-
-
-.services__card:hover {
-  background: var(--accent-color);
-  color: var(--color-white);
-}
-
-.services__card:hover * {
-  color: var(--color-white);
-  transition: all 400ms ease;
-}
-
-.services__card-icon {
-  font-size: 2rem;
-}
-
-.services__card h5 {
-  margin: 1rem 0;
-}
-
-.services__card:hover a {
-  margin-left: 1rem;
+  .about__right {
+    display: none;
+  }
 }
 
 /* ================= PORTFOLIO ============== */
@@ -404,7 +417,7 @@ p {
 .portfolio__project {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  align-items: left;
   gap: 1rem;
 }
 
@@ -415,7 +428,7 @@ p {
   overflow: hidden;
   box-shadow: 0 0 1.6rem var(--color-primary-variant);
   transition: all 400ms ease;
-  
+
 }
 
 .portfolio__project-image:hover {
@@ -423,7 +436,7 @@ p {
 }
 
 .portfolio__project-image img {
-  transform: 0;
+  
   transition: all 12s ease;
 }
 
@@ -521,13 +534,15 @@ footer {
   nav {
     background: var(--color-black);
   }
-header{
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  position: relative;
-  width: 100vw;
-}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    position: relative;
+    width: 100vw;
+  }
+
   .nav__container {
     position: relative;
     width: 100vw;
@@ -588,7 +603,7 @@ header{
   }
 
   .nav__menu li a {
-    background: var(--color-primary);
+    background: var(--color-dark);
     box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
     color: var(--color-white);
     width: 100%;
@@ -618,8 +633,42 @@ header{
   }
 
   /* ============== HEADER ============== */
-#about{
-  background-color: var(--color-black);
+  #about {
+    background: var(--color-black);
+    margin: 0;
+    padding-top: 4em;
+    padding-bottom: 10em;
+  }
+.hero__container{
+  align-items: flex-end;
+  height: 100%;
+}
+.hero__left {
+  margin-bottom: 6rem;
+}
+.hero__right {
+  align-self: flex-end;
+  height: 100%;
+}
+.hero__right-bg {
+  width: 30rem;
+  height: 30rem;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+.hero__image {
+  bottom: -1rem;
+  width: 100%;
+}
+
+.hero__socials {
+  bottom: 4rem;
+}
+
+.hero__socials a {
+  color: var(--color-primary);
 }
 
   .about__container {
@@ -660,18 +709,8 @@ header{
 
 
 
-  /* ============== SERVICES ============== */
-  .services__container {
-    grid-template-columns: 1fr;
-  }
-
-  .services__left {
-    display: none;
-  }
-
-  .services__cards {
-    gap: 1rem;
-  }
+  
+  
 
   /* ============== PORTFOLIO ============== */
   .portfolio__head h3 {
@@ -680,7 +719,7 @@ header{
 
   .portfolio__head-right {
     width: auto;
-    margin-top:2em;
+    margin-top: 2em;
   }
 
 
@@ -740,6 +779,43 @@ header{
     height: 100vh;
     padding: 0;
   } */
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hero__left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero__left p {
+    margin: 0.5rem 0 1.2rem;
+
+  }
+
+  .hero__image {
+    position: relative;
+    top: -2rem;
+  }
+
+  .hero__right-bg {
+    bottom: 36%;
+  }
+
+  .hero__right {
+    display: none;
+  }
+
+  .hero__socials {
+    position: absolute;
+    z-index: 1;
+    bottom: 11rem;
+  }
+
+  .hero__socials a {
+    color: var(--color-white);
+  }
 
   .about__container {
     grid-template-columns: 1fr;
@@ -753,7 +829,7 @@ header{
 
   .about__left p {
     margin: 0.5rem 0 1.2rem;
-   
+
   }
 
   .about__image {
@@ -779,17 +855,14 @@ header{
     color: var(--color-white);
   }
 
-  /* ================= SERVICES ============== */
-  .services__cards {
-    grid-template-columns: 1fr;
-  }
+ 
 
 
 
   /* ================= PORTFOLIO ============== */
   .portfolio__head {
     flex-direction: column;
-    gap: 1fr;
+    gap: 1em;
     margin-top: 45px;
   }
 
@@ -804,11 +877,6 @@ header{
 
   .portfolio__cta {
     justify-content: center;
-  }
-
-  /* ================= TESTIMONIALS ============== */
-  .testimonial {
-    padding: 1rem;
   }
 
   /* ================= CONTACT ============== */
@@ -873,7 +941,7 @@ header{
   left: 68px;
   height: 100px;
   width: 60px;
-  background: #3f64ce;
+  background: var(--color-dark);
 }
 
 .body::after {
@@ -883,7 +951,7 @@ header{
   left: 20px;
   height: 100px;
   width: 60px;
-  background: #3f64ce;
+  background: var(--color-dark);
   transform: skewX(14deg);
 }
 
@@ -893,7 +961,7 @@ header{
   left: 110px;
   height: 44px;
   width: 90px;
-  background: #3f64ce;
+  background: var(--color-dark);
   border-radius: 22px;
   /** animation */
   transform-origin: 16px 22px;
@@ -935,7 +1003,7 @@ header{
   left: 26px;
   height: 44px;
   width: 70px;
-  background: #3f64ce;
+  background: var(--color-dark);
   border-bottom-left-radius: 8px;
   /** animation */
   transform-origin: 60px 26px;
@@ -1066,7 +1134,7 @@ header{
   width: 160px;
   height: 20px;
   border-radius: 20px;
-  background: #3f64ce;
+  background: var(--color-dark);
 }
 
 .head .hat::before {
@@ -1079,7 +1147,7 @@ header{
   height: 0;
   border-style: solid;
   border-width: 0 34px 70px 50px;
-  border-color: transparent transparent #3f64ce transparent;
+  border-color: transparent transparent var(--color-dark) transparent;
 }
 
 .head .hat::after {
@@ -1089,7 +1157,7 @@ header{
   left: 0;
   width: 160px;
   height: 20px;
-  background: #3f64ce;
+  background: var(--color-dark);
   border-radius: 20px;
 }
 
@@ -1101,7 +1169,7 @@ header{
   height: 0;
   border-style: solid;
   border-width: 0 25px 25px 19px;
-  border-color: transparent transparent #3f64ce transparent;
+  border-color: transparent transparent var(--color-dark) transparent;
 }
 
 .head .hat .hat-of-the-hat::after {
@@ -1113,7 +1181,7 @@ header{
   height: 10px;
   border-radius: 10px;
   border-bottom-left-radius: 0px;
-  background: #3f64ce;
+  background: var(--color-dark);
   transform: rotate(40deg);
 }
 
@@ -1155,6 +1223,11 @@ header{
 .head .hat .four-point-star.--third {
   bottom: 15px;
   left: 108px;
+}
+
+figcaption {
+  color: var(--color-light);
+  font-family: 'Space Mono', sans-serif;
 }
 
 /** 10s animation - 10% = 1s */
@@ -1548,9 +1621,7 @@ header{
   padding-left: 8em;
 }
 
-h2 {
- 
-}
+
 
 h3 {
   margin-top: 1rem;
@@ -1587,7 +1658,7 @@ code {
 
 .containers {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 /* .rectangle1 {
@@ -1625,13 +1696,15 @@ justify-content: center;
 .rectangle p {
   margin-top: 10px;
 }
-.main-title{
-  font-size:10em;
+
+.main-title {
+  font-size: 10em;
   font-size: 10em;
 
   font-family: 'Inter', sans-serif;
   font-weight: 800;
 }
+
 .title {
   font-size: 10em;
 
@@ -1648,13 +1721,15 @@ justify-content: center;
   .container-box .title {
     font-size: 5em;
   }
+
   .title {
     font-size: 5.5em;
   }
-  .main-title{
+
+  .main-title {
     font-size: 5.5em;
   }
-  
+
 }
 
 
